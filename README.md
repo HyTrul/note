@@ -1,9 +1,9 @@
 # note
 ref_link:http://lists.kernelnewbies.org/pipermail/kernelnewbies/2013-July/008598.html
 
-** The following approach was successfully tested in Linux kernel 3.5.7 version sources for x86 32-bit architecture. **
+**The following approach was successfully tested in Linux kernel 3.5.7 version sources for x86 32-bit architecture.**
 
-** Here are the steps to create our own system call in the existing kernel sources. The paths given below are relative paths from /usr/src/linux. **
+**Here are the steps to create our own system call in the existing kernel sources. The paths given below are relative paths from /usr/src/linux.**
 
 #### 1. Generally, add the function (system call) definition in kernel/sys.c file.
 
