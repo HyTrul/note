@@ -7,11 +7,13 @@
 
 #### 1. Generally, add the function (system call) definition in kernel/sys.c file.
 
+```
 /* this is the implementation of our system call */
 asmlinkage long sys_helloworld(void) {
        printk(KERN_EMERG "Hello, world!\n");
 return 0;
 }
+```
 
 #### 2. Add the function prototype in the header file include/linux/syscalls.h
 
