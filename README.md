@@ -9,9 +9,10 @@
 
 ```
 /* this is the implementation of our system call */
-asmlinkage long sys_helloworld(void) {
-       printk(KERN_EMERG "Hello, world!\n");
-return 0;
+asmlinkage long sys_helloworld(void)
+{
+    printk(KERN_EMERG "Hello, world!\n");
+    return 0;
 }
 ```
 
@@ -56,7 +57,7 @@ make install
 /* sys_helloworld 350 */
 int main ()
 {
-syscall(350); /* 350 is our system calls offset number */
+    syscall(350); /* 350 is our system calls offset number */
     return 0;
 }
 ```
@@ -68,3 +69,9 @@ specific Kconfig.
 
 Regards,
 Srinivas.
+
+## 总结
+
+### 编译层次图
+
+![image](https://github.com/HyTrul/pic/blob/master/package/pic20180304210402.jpg)
